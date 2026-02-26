@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Warung Nasi Sidodadi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4fff4;
+        }
+
+        header {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            border-bottom: 8px solid #4caf50;
+        }
+
+        .slogan {
+            font-style: italic;
+        }
+
+        /* FOTO WARUNG */
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        section {
+            padding: 30px 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1b5e20;
+        }
+
+        .profil {
+            background: white;
+            border-left: 6px solid #4caf50;
+            border-right: 6px solid #4caf50;
+        }
+
+        .papan-menu {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .papan-menu h3 {
+            text-align: center;
+            color: #ffeb3b;
+            margin-bottom: 15px;
+        }
+
+        .menu-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .menu-list div {
+            border-bottom: 1px dashed #ffffff;
+            padding: 5px 0;
+        }
+
+        .produk-container {
+            text-align: center;
+        }
+
+        .produk-item {
+            display: inline-block;
+            width: 280px;
+            margin: 15px;
+            background: white;
+            border: 3px solid #4caf50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .produk-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .harga {
+            font-weight: bold;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            .menu-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Warung Nasi Sidodadi</h1>
+        <p class="slogan">Murah • Enak • Kenyang</p>
+    </header>
+
+    <!-- FOTO WARUNG -->
+    <div class="hero">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweo9aHaZWI3G5QODULqB5Zc33oLQ87PtmD-eIfm5tQcKAPFgaCn7EImKmj5WMz0KXQCc5Sv6EW4PIIN-09RLq24VqDtamyPG4mPDNIJGOXYmL-eYRdBjpZAkkvlOk9ECnp3LWGE=s680-w680-h510-rw" alt="Foto Warung Nasi Sidodadi">
+    </div>
+
+    <!-- PROFIL -->
+    <section class="profil">
+        <h2>Tentang Kami</h2>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            Warung Nasi Sidodadi adalah warung makan tradisional yang menyajikan 
+            berbagai masakan rumahan khas Indonesia dengan harga terjangkau 
+            dan cita rasa autentik.
+        </p>
+        <p style="text-align:center;"><strong>Tahun Berdiri:</strong> 2006</p>
+        <p style="text-align:center;"><strong>Jenis Usaha:</strong> Warung Makan Tradisional</p>
+    </section>
+
+    <!-- PAPAN MENU -->
+    <section>
+        <h2>Papan Menu</h2>
+        <div class="papan-menu">
+            <h3>DAFTAR MENU HARI INI</h3>
+            <div class="menu-list">
+                <div>Nasi Putih</div>
+                <div>Ayam Goreng</div>
+                <div>Rendang Daging</div>
+                <div>Telur Balado</div>
+                <div>Orek Tempe</div>
+                <div>Perkedel Kentang</div>
+                <div>Sayur Asem</div>
+                <div>Sayur Lodeh</div>
+                <div>Ikan Goreng</div>
+                <div>Sambal Terasi</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section>
+        <h2>Menu Andalan</h2>
+        <div class="produk-container">
+
+            <div class="produk-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/5a510ea09f8dce440125983e/1562663644219-NGZSCERS8X3M5Y48XU1D/nasi-uduk-ayam-goreng.jpg" alt="Nasi Ayam Goreng">
+                <h3>Nasi Ayam Goreng</h3>
+                <p>Nasi hangat dengan ayam goreng gurih dan sambal khas.</p>
+                <p class="harga">Rp 18.000</p>
+            </div>
+
+            <div class="produk-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Sego_Pecel.jpg" alt="Nasi Pecel">
+                <h3>Nasi Pecel</h3>
+                <p>Pecel yang pedas dan segar.</p>
+                <p class="harga">Rp 10.000</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>Kontak Kami</h2>
+        <p><strong>Alamat:</strong> Jl. Bangun Reksa Indah 2 (Sudah tutup permanen)</p>
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.6315151262!2d106.6894311!3d-6.2297209"
+            width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <p><strong>WhatsApp:</strong> +62 857-1862-2168</p>
+
+        <hr>
+        <p>© 2026 Warung Nasi Sidodadi</p>
+        <p>Dibuat oleh: Djenar Maylafaisha </p>
+    </footer>
+
+</body>
+</html>
